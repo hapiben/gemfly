@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+ruby install_githooks.rb

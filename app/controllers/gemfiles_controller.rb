@@ -1,7 +1,7 @@
 class GemfilesController < ApplicationController
-  
-  def update
-    @gemfile = Gemfile.new(GemParams.build(params))
+
+  def create
+    @gemfile = Gemfile.new(GemfileParams.build(params))
     @updated_gemfile = @gemfile.updated_gemfile rescue ''
 
     respond_to do |format|
@@ -9,7 +9,7 @@ class GemfilesController < ApplicationController
     end
   end
 
-  class GemParams
+  class GemfileParams
     def self.build(params)
       params.permit(:gemfile)
     end

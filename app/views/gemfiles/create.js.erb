@@ -1,0 +1,7 @@
+$('.updated_gemfile').html("<%= j render(partial: 'gemfiles/update_gemfile', locals: { obj: @updated_gemfile }) %>");
+
+var editor = CodeMirror.fromTextArea(document.getElementById('updated_gemfile'), {
+	lineNumbers: true
+	,tabSize: 2
+	,theme: 'neo'
+});

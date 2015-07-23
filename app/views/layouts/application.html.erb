@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Gemfly</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+      <%= content_for?(:title) ? yield(:title) : t('app.title') %>
+    </title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= csrf_meta_tag %>
+  </head>
+  
+  <body>
+    <div id="container">
+      <br/>
+      <%= render 'shared/header' %>
+      <%= yield %>
+    </div>
+  </body>
 
-<%= yield %>
-
-</body>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
 </html>

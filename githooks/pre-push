@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo 'Executing RSpec tests...'
+if ! bundle exec rspec; then
+  echo 'At least one spec failed, please fix before pushing'
+  exit 1
+fi
+
+exit 0

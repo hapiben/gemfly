@@ -11,5 +11,16 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require codemirror
+ *= require codemirror/themes/neo
  *= require_self
+ *= require foundation_and_overrides
  */
+
+.CodeMirror { 
+	height: auto;
+	border: 1px solid #ddd; }
+
+.CodeMirror-scroll {
+	min-height: 400px;
+	}
