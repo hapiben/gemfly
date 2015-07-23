@@ -1,31 +1,41 @@
 (function() {
 	Gemfiles = (function() {
+		var options = {
+			lineNumbers: true
+			,tabSize: 2
+			,theme: 'neo'
+		}
+
 		return {
-			init: (function() {
+			updatedGemfile: null
+			,init: (function() {
 				var self = this;
 
-				self.initCodeMirror();
+				self.initUpdatedGemfileEditor();
+				self.initGemfileEditor();
 			})
 
-			,initCodeMirror: (function() {
+			,initGemfileEditor: (function() {
 				var self = this,
-					textAreas = ['gemfile', 'updated_gemfile'];
+					editor = CodeMirror.fromTextArea(document.getElementById('gemfile'), options);
 
-				$.each(textAreas, function(index, id) {
-					element = document.getElementById(id);
-					
-					if (element) {
-						var editor = CodeMirror.fromTextArea(element, {
-							lineNumbers: true
-							,tabSize: 2
-							,theme: 'neo'
-						});
+				editor.focus();
+				// editor.on('scroll', function() {
+				// 	var scrollInfo = editor.getScrollInfo(),
+				// 		left = scrollInfo.left,
+				// 		top = scrollInfo.top;
 
-						if (id === 'gemfile') {
-							editor.focus();
-						}
-					}
-				});
+				// 		console.log(left);
+
+				// 	// self.updatedGemfile.scrollTo(250, 0);
+				// });
+			})
+
+			,initUpdatedGemfileEditor: (function() {
+				var self = this,
+					editor = CodeMirror.fromTextArea(document.getElementById('updated_gemfile'), options);
+
+				self.updatedGemfile = editor;
 			})
 		}
 	})();
