@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rubygems.org/api/v1/gems/rails.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 23 Jul 2015 09:57:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e76a6df8-bc79-4a26-bdf6-ae308ce6d2d1
+      X-Runtime:
+      - '0.014123'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA5VTTW/iMBD9K5bPIUACFJB666E97KXaW7dCjjMJLomd9Uei
+        LuK/73O2rFrUA9ziyXvzZt7MHLkWLfEtt0I1jie8NINujCgd3y7nWZbN1quE
+        92SdMhqwRZqlOWAfkd0neDbbzOfrhHeN8JWxbUwaineARfB7Y5GRP4heleyR
+        lKaWFFn2KLRzyJxwpSsDxDMozGj2HOthyjHBqtA0E+eFPLCBClZZVDwYe2Cm
+        86pVf6hk0GOdNTV+tci6F10HCQe2LpkLICstioYiqAzSq17595Q9eUZammBF
+        TY4VhEIV1Jg0JTHUUYneWKVrBHRP2sMDZtB6fFeqBi+GUlTfKEnaEXp84T+e
+        fvLXhLfkRSm84NvjKeFujw++EvNNkWey2mRC5sv1UmZUVUW1zJer1SKj9SJf
+        bATeS6J1ts7u8nlOMpd3kvLF+m4GJXTwRtLvglVIuPe+206n0eiaWpcaW0/j
+        x/Q8Tzyugk7GyaaAQ2NvWurgyVfmMAxpFDJ6TB61gB3UQV3gEPkGWBoZWpg4
+        evaVIbrvCC1UYP6uUe6i3dqa0Lm0NqZuKJWmnY6R0YaP6iZeNAeU5zBdSbs4
+        0a+atfL7UIzksZ3/jhWh3nmLbSN7DWOqnAsYPE6HOtIlFkrFPTji3VNjutgz
+        1gIbYQNWKF7by/F8dgK7aHTslCxSWPodlMVtaB/P5Z79u7dTckHoUN4N8F7R
+        cDW8pzdT3IBuYW1zA96SNLa8geBC1xnrr2IUQZffWvkrzGa5ZFk6S9j4Tfds
+        joWf8U/mxkXwcXrXTMLhErEk3k3Ot3YxvbMMJF5Pp78sXjlsagUAAA==
+    http_version: 
+  recorded_at: Thu, 23 Jul 2015 09:57:47 GMT
+recorded_with: VCR 2.9.3
