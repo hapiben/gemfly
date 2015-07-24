@@ -41,9 +41,7 @@ class Gemfile
   def update_gem_content
     self.gems.each do |name, version|
       begin
-        response = RestClient.get(gem_path(name))
-        hash = JSON.parse(response)
-        new_version = hash['version']
+        new_version = Gems.info(name)['version']
         name_regex = /['|"]#{Regexp.quote(name)}['|"]/
         name_version_regex = /gem\s*['|"](#{Regexp.quote(name)})[\'|"]\W*([\d*\.]*)?'/
 
