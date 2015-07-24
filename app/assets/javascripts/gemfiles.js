@@ -7,8 +7,7 @@
 		}
 
 		return {
-			updatedGemfile: null
-			,init: (function() {
+			init: (function() {
 				var self = this;
 
 				self.initUpdatedGemfileEditor();
@@ -16,26 +15,13 @@
 			})
 
 			,initGemfileEditor: (function() {
-				var self = this,
-					editor = CodeMirror.fromTextArea(document.getElementById('gemfile'), options);
+				var editor = CodeMirror.fromTextArea(document.getElementById('gemfile'), options);
 
 				editor.focus();
-				// editor.on('scroll', function() {
-				// 	var scrollInfo = editor.getScrollInfo(),
-				// 		left = scrollInfo.left,
-				// 		top = scrollInfo.top;
-
-				// 		console.log(left);
-
-				// 	// self.updatedGemfile.scrollTo(250, 0);
-				// });
 			})
 
 			,initUpdatedGemfileEditor: (function() {
-				var self = this,
-					editor = CodeMirror.fromTextArea(document.getElementById('updated_gemfile'), options);
-
-				self.updatedGemfile = editor;
+				var editor = CodeMirror.fromTextArea(document.getElementById('updated_gemfile'), options);
 			})
 		}
 	})();
