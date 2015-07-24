@@ -7,21 +7,46 @@
 		}
 
 		return {
-			init: (function() {
+			editors: { }
+			,init: (function() {
 				var self = this;
 
 				self.initUpdatedGemfileEditor();
 				self.initGemfileEditor();
+				self.initEvents();
 			})
 
 			,initGemfileEditor: (function() {
-				var editor = CodeMirror.fromTextArea(document.getElementById('gemfile'), options);
+				var self = this,
+					editor = CodeMirror.fromTextArea(document.getElementById('gemfile'), options);
 
 				editor.focus();
+				self.editors['gemfile'] = editor;
 			})
 
 			,initUpdatedGemfileEditor: (function() {
-				var editor = CodeMirror.fromTextArea(document.getElementById('updated_gemfile'), options);
+				var self = this,
+					editor = CodeMirror.fromTextArea(document.getElementById('updated_gemfile'), options);
+
+				self.editors['updated_gemfile'] = editor;
+			})
+
+			,initEvents: (function() {
+				var self = this,
+					updateBtn = $('#update-gemfile');
+
+				updateBtn.on('click', function() {
+					self.setReadOnlyEditors(true);
+				})
+
+			})
+
+			,setReadOnlyEditors: (function(enable) {
+				var self = this;
+
+				$.each(self.editors, function(index, editor) {
+					editor.setOption('readOnly', enable);
+				})
 			})
 		}
 	})();

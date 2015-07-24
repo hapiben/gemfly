@@ -5,3 +5,6 @@ var editor = CodeMirror.fromTextArea(document.getElementById('updated_gemfile'),
 	,tabSize: 2
 	,theme: 'neo'
 });
+
+// Set the original gemfile editor to editable
+Gemfiles.editors['gemfile'].setOption('readOnly', false);
