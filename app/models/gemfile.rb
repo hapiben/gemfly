@@ -42,6 +42,9 @@ class Gemfile
     self.gems.each do |name, version|
       begin
         new_version = Gems.info(name)['version']
+
+        puts "---> #{new_version}"
+
         name_regex = /['|"]#{Regexp.quote(name)}['|"]/
         name_version_regex = /gem\s*['|"](#{Regexp.quote(name)})[\'|"]\W*([\d*\.]*)?'/
 

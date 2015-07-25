@@ -3,7 +3,11 @@ require 'rails_helper'
 RSpec.describe Gemfile, type: :model do
   let(:gemfile) { Gemfile.new({ gemfile: "gem 'rails'" }) }
 
-  describe '#initialize', :vcr do
+  before {
+    allow_any_instance_of(Gemfile).to receive(:update_gem_content) { true }
+  }
+
+  describe '#initialize' do
     %w(gemfile gems updated_gemfile).each do |attr| 
       it "assigns #{attr}" do
         expect(gemfile).to respond_to(attr.to_sym)
@@ -11,7 +15,7 @@ RSpec.describe Gemfile, type: :model do
     end
   end
 
-  describe '#sanitize_gem_content', :vcr do
+  describe '#sanitize_gem_content' do
     it 'sets the gem hash with name and version' do
       gemfile = Gemfile.new({ gemfile: "gem 'rails', '~> 3.12.2'" })
       expect(gemfile.gems).to eq({ 'rails' => '3.12.2' })
@@ -48,7 +52,7 @@ RSpec.describe Gemfile, type: :model do
     end
   end
 
-  describe '#gem_path', :vcr do
+  describe '#gem_path' do
     it 'returns the ruby gem path from rubygems.org' do
       expect(gemfile.gem_path('rails')).to eq 'https://rubygems.org/api/v1/gems/rails.json'
     end
