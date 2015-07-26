@@ -3,7 +3,7 @@
 		var options = {
 			lineNumbers: true
 			,tabSize: 2
-			,theme: 'neo'
+			,theme: 'material'
 		}
 
 		return {

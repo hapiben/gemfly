@@ -13,6 +13,7 @@
  *= require_tree .
  *= require codemirror
  *= require codemirror/themes/neo
+ *= require codemirror/themes/material
  *= require_self
  *= require foundation_and_overrides
  */
@@ -23,4 +24,8 @@
 
 .CodeMirror-scroll {
 	min-height: 400px;
+	}
+
+.container {
+	border-top: 2px solid #ccc;
 	}
