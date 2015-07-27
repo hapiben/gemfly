@@ -1,0 +1,29 @@
+<div class="panel">
+  <div class="row">
+    <div class="small-6 columns">
+      <%= form_tag url_for(controller: 'gemfiles', action: :create), method: :post, html: { role: 'form' }, remote: true  do %>
+        <div class="row">
+          <div class="small-12 columns">
+            <%= label_tag :gemfile, 'Paste your old Gemfile content here' %>
+            <%= text_area_tag :gemfile, params[:gemfile], rows: 25 %>
+          </div>
+        </div>
+
+        <br/>
+        
+        <div class="row">
+          <div class="small-12 columns">
+              <%= submit_tag 'Update Gemfile!', class: 'button small success right round', id: 'update-gemfile', data: { disable_with: 'Please wait...' } %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="small-6 columns">
+      <%= label_tag :updated_gemfile, 'Results will appear here' %>
+      <div class="updated_gemfile">
+        <%= render 'gemfiles/update_gemfile', obj: @updated_gemfile %>
+      </div>
+    </div>
+  </div>
+</div>
