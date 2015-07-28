@@ -45,4 +45,4 @@ en:
     button_submit: Update Gemfile
 
   copy:
-    description: Keep your <strong>Gemfile</strong> gems up-to-date
+    description: Make your <strong>Gemfile</strong> gems up-to-date
