@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require codemirror
 //= require codemirror/modes/ruby
+//= require codemirror.placeholder
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

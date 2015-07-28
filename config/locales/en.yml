@@ -23,3 +23,8 @@ en:
   app:
     title: GemFly
     description: Update your gems in one click
+
+  form:
+    placeholder_reuslts: Results will appear here
+    placeholder_gemfile: Paste your Gemfile contents here
+    message_disable_with: Please wait...
