@@ -10,12 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require codemirror
- *= require codemirror/themes/neo
  *= require codemirror/themes/material
- *= require_self
  *= require foundation_and_overrides
+ *= require main
+ *= require_self
  */
 
 .CodeMirror { 
@@ -23,7 +22,7 @@
 	border: 1px solid #ddd; }
 
 .CodeMirror-scroll {
-	min-height: 400px;
+	min-height: 300px;
 	}
 
 .container {

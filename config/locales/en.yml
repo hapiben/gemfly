@@ -25,6 +25,24 @@ en:
     description: Update your gems in one click
 
   form:
-    placeholder_reuslts: Results will appear here
-    placeholder_gemfile: Paste your Gemfile contents here
+    placeholder_gemfile: |
+      Paste your Gemfile contents here
+
+      # Example
+      gem 'rails', '3.2.22'
+      gem 'sass-rails', '~> 3.2.6'
+      gem 'uglifier', '>= 1.3.0'
+
+    placeholder_results: |
+      Results will appear here
+
+      # Example
+      gem 'rails', '4.2.3'
+      gem 'sass-rails', '~> 5.0.3'
+      gem 'uglifier', '>= 2.7.1'
+
     message_disable_with: Please wait...
+    button_submit: Update Gemfile
+
+  copy:
+    description: Keep your <strong>Gemfile</strong> gems up-to-date
