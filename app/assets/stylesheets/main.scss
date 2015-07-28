@@ -21,3 +21,17 @@ header {
     font-weight: 300;
   }
 }
+
+footer {
+  margin: 40px 0;
+
+  a, p {
+    font-weight: 400;
+    font-size: 12px;
+    color: $aluminum;
+
+    &:hover {
+      color: $aluminum;
+    }
+  }
+}
