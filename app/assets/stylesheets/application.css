@@ -14,12 +14,13 @@
  *= require codemirror/themes/material
  *= require foundation_and_overrides
  *= require main
+ *= require window
  *= require_self
  */
 
 .CodeMirror { 
 	height: auto;
-	border: 1px solid #ddd; }
+	}
 
 .CodeMirror-scroll {
 	min-height: 300px;

@@ -1,1 +1,12 @@
-<%= text_area_tag :updated_gemfile, obj, rows: 25, placeholder: t('form.placeholder_results') %>
+<div class="editor-window">
+  <div class="top-bar">
+    <div class="circles">
+      <div class="circle circle-red"></div>
+      <div class="circle circle-yellow"></div>
+      <div class="circle circle-green"></div>
+    </div>
+  </div>
+  <div class="window-content">
+    <%= text_area_tag :updated_gemfile, obj, rows: 25, placeholder: t('form.placeholder_results') %>
+  </div>
+</div>

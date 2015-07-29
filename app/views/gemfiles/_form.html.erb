@@ -4,7 +4,20 @@
       <%= form_tag url_for(controller: 'gemfiles', action: :create), method: :post, html: { role: 'form' }, remote: true  do %>
         <div class="row">
           <div class="small-12 columns">
-            <%= text_area_tag :gemfile, params[:gemfile], rows: 25, placeholder: t('form.placeholder_gemfile').html_safe %>
+
+            <div class="editor-window">
+              <div class="top-bar">
+                <div class="circles">
+                  <div class="circle circle-red"></div>
+                  <div class="circle circle-yellow"></div>
+                  <div class="circle circle-green"></div>
+                </div>
+              </div>
+              <div class="window-content">
+                <%= text_area_tag :gemfile, params[:gemfile], rows: 25, placeholder: t('form.placeholder_gemfile').html_safe %>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -25,3 +38,5 @@
     </div>
   </div>
 </div>
+
+
