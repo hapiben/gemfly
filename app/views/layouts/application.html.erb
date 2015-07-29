@@ -1,23 +1,13 @@
-<!--
-
-Follow me on Twitter!
-
-   ______  __                        ___      __        __                
-  / ____ \/ /_  ___  ____  ___  ____/ (_)____/ /_____ _/ /_  ______ _____ 
- / / __ `/ __ \/ _ \/ __ \/ _ \/ __  / / ___/ __/ __ `/ / / / / __ `/ __ \
-/ / /_/ / /_/ /  __/ / / /  __/ /_/ / / /__/ /_/ /_/ / / /_/ / /_/ / / / /
-\ \__,_/_.___/\___/_/ /_/\___/\__,_/_/\___/\__/\__,_/_/\__,_/\__,_/_/ /_/ 
- \____/                                                                   
-
--->
-
+<%= render 'shared/ascii' %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="<%= t('app.description') %>" name="description"/>
+    <meta content="<%= t('app.author') %>" name="author"/>
     <title>
-      <%= content_for?(:title) ? yield(:title) : t('app.title') %>
+      <%= full_title(yield(:title)) %>
     </title>
     <%= stylesheet_link_tag 'application' %>
     <%= csrf_meta_tag %>

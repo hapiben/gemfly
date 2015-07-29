@@ -21,8 +21,9 @@
 
 en:
   app:
-    title: GemFly
+    title: Gemfly
     description: Update your gems in one click
+    author: Benedict Aluan
 
   form:
     placeholder_gemfile: |
