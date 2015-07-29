@@ -22,7 +22,7 @@
 en:
   app:
     title: Gemfly
-    description: Update your gems in one click
+    description: Update your Gemfile gems
     author: Benedict Aluan
 
   form:
