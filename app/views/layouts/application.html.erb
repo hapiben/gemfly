@@ -23,4 +23,5 @@
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
   <%= render 'shared/analytics' unless Rails.env == 'development' %>
+  <%= render 'shared/hotjar' unless Rails.env == 'development' %>
 </html>
