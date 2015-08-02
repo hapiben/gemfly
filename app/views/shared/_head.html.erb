@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="<%= t('app.description') %>" name="description"/>
+  <meta content="<%= t('app.author') %>" name="author"/>
+  <meta property="og:title" content="<%= full_title(yield(:title)) %>" />
+  <meta property="og:description" content="<%= t('app.description') %>" />
+  <meta property="og:site_name" content="<%= t('app.title') %>" />
+  <meta property="og:url" content="http://gemfly.findings.co" />
+  <title>
+    <%= full_title(yield(:title)) %>
+  </title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= csrf_meta_tag %>
+</head>

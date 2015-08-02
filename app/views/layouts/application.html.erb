@@ -1,17 +1,7 @@
 <%= render 'shared/ascii' %>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="<%= t('app.description') %>" name="description"/>
-    <meta content="<%= t('app.author') %>" name="author"/>
-    <title>
-      <%= full_title(yield(:title)) %>
-    </title>
-    <%= stylesheet_link_tag 'application' %>
-    <%= csrf_meta_tag %>
-  </head>
+  <%= render 'shared/head' %>
   
   <body>
     <div id="container">
