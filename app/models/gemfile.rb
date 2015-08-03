@@ -3,7 +3,7 @@ class Gemfile
 
   REGEX_COMMENTS = /#.*/
   REGEX_NEWLINE = /\r\n|\r|\n/
-  REGEX_GEM_NAME = /gem\s*['|"](\S*)['|"](\s|.*)/
+  REGEX_GEM_NAME = /gem\s*['|"](\S*)['|"](|.*)/
   REGEX_GEM_VERSION = /(\d\.\d\.?[\d\.]?*)/
   REGEX_GEM_NAME_VERSION = /gem\s*['|"](\S*)[\'|"]\W*([\d*\.]*)?'/
 
@@ -31,7 +31,7 @@ class Gemfile
 
     hash = {}
     gem_line.each do |gem|
-      name = gem.gsub(REGEX_GEM_NAME, '\1').strip
+      name = gem.match(REGEX_GEM_NAME).captures.first
       version = gem.match(REGEX_GEM_VERSION).captures.first rescue ''
       hash[name] = version
     end
