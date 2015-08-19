@@ -16,13 +16,14 @@ gem 'turbolinks', '~> 2.5.3' # Turbolinks makes following links in your web appl
 gem 'jbuilder', '~> 2.3.1' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'gems', '~> 0.8.3'
 gem 'sdoc', '~> 0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
+gem 'gemnasium-parser'
 
 group :development do
   gem 'better_errors', '~> 2.1.1'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rails', '~> 1.1.3'
-  gem 'pry-rails', '~> 0.3.4', group: :development
+  gem 'pry-byebug', group: :development
 end
 
 group :test do

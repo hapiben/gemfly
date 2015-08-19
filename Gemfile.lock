@@ -45,6 +45,8 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
+    byebug (5.0.0)
+      columnize (= 0.9.0)
     capistrano (3.4.0)
       i18n
       rake (>= 10.0.0)
@@ -66,6 +68,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     colorize (0.7.7)
+    columnize (0.9.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     debug_inspector (0.0.2)
@@ -77,6 +80,7 @@ GEM
     foundation-rails (5.5.2.1)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
+    gemnasium-parser (0.1.9)
     gems (0.8.3)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
@@ -113,8 +117,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-rails (0.3.4)
-      pry (>= 0.9.10)
+    pry-byebug (3.2.0)
+      byebug (~> 5.0)
+      pry (~> 0.10)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -226,11 +231,12 @@ DEPENDENCIES
   codemirror-rails (~> 5.5)
   coffee-rails (~> 4.1.0)
   foundation-rails (~> 5.5.2.1)
+  gemnasium-parser
   gems (~> 0.8.3)
   haml (~> 4.0.6)
   jbuilder (~> 2.3.1)
   jquery-rails (~> 4.0.4)
-  pry-rails (~> 0.3.4)
+  pry-byebug
   pygments.rb (~> 0.6.3)
   rails (= 4.2.3)
   rest-client (~> 1.8.0)
@@ -243,3 +249,6 @@ DEPENDENCIES
   vcr (~> 2.9.3)
   web-console (~> 2.2.1)
   webmock (~> 1.21.0)
+
+BUNDLED WITH
+   1.10.5
