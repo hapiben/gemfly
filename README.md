@@ -6,7 +6,7 @@ A simple online tool to update the version of your Gemfile gems. Pull requests a
 
 # Contributing
 
-1. Fork it ( https://github.com/benedictaluan/gemfly/fork )
+1. Fork it ( https://github.com/hapiben/gemfly/fork )
 2. Create your feature branch (`git checkout -b my-awesome-feature`)
 3. Commit your changes (`git commit -am 'Added my awesome feature!'`)
 4. Push to the branch (`git push origin my-awesome-feature`)
