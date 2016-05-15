@@ -34,4 +34,8 @@ group :test do
   gem 'webmock', '~> 1.21.0'
 end
 
+group :production do
+  gem 'pg'
+end
+
 
