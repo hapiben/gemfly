@@ -1,0 +1,23 @@
+version: '3'
+services:
+  # db:
+  #   image: postgres:11.3-alpine
+  #   volumes:
+  #     - db_data:/var/lib/postgresql/data
+  #   environment:
+  #     POSTGRES_USER: "dev"
+  #     POSTGRES_PASSWORD: "dev"
+  #     POSTGRES_DB: "gemfly"
+  app:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle install --jobs 8 && bundle exec rails s -b '0.0.0.0'"
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      - bundle:/usr/local/bundle
+    # depends_on:
+    #   - db
+volumes:
+  db_data:
+  bundle:
