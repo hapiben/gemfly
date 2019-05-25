@@ -8,7 +8,7 @@ gem 'coffee-rails', '~> 4.1.0' # Use CoffeeScript for .coffee assets and views
 gem 'rest-client', '~> 1.8.0'
 gem 'haml', '~> 5.1.1'
 gem 'pygments.rb', '~> 1.2.1'
-gem 'codemirror-rails', '~> 5.5'
+gem 'codemirror-rails', '~> 5.16.0'
 gem 'foundation-rails', '~> 5.5.2.1'
 gem 'jquery-rails', '~> 4.0.4' # Use jquery as the JavaScript library
 gem 'turbolinks', '~> 2.5.3' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
