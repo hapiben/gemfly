@@ -16,7 +16,7 @@ gem 'jbuilder', '~> 2.9.1' # Build JSON APIs with ease. Read more: https://githu
 gem 'gems', '~> 1.1'
 gem 'sdoc', '~> 1.0', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
 gem 'gemnasium-parser'
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 4.0'
 
 group :development do
   gem 'better_errors', '~> 2.1.1'
