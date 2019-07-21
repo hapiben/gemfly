@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.1'
-gem 'sass-rails', '~> 5.0.3' # Use SCSS for stylesheets
-gem 'uglifier', '>= 2.7.1' # Use Uglifier as compressor for JavaScript assets
+gem 'sass-rails', '~> 5.0.7' # Use SCSS for stylesheets
+gem 'uglifier', '~> 4.1' # Use Uglifier as compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.1.0' # Use CoffeeScript for .coffee assets and views
-gem 'rest-client', '~> 1.8.0'
+gem 'rest-client', '~> 2.0.2'
 gem 'haml', '~> 5.1.1'
 gem 'pygments.rb', '~> 1.2.1'
 gem 'codemirror-rails', '~> 5.16.0'
@@ -35,5 +35,5 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 1.1.4'
 end
