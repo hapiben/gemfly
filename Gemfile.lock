@@ -84,7 +84,8 @@ GEM
     gems (0.8.3)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
-    haml (4.0.6)
+    haml (5.1.2)
+      temple (>= 0.8.0)
       tilt
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -197,6 +198,7 @@ GEM
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    temple (0.8.2)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -234,7 +236,7 @@ DEPENDENCIES
   foundation-rails (~> 5.5.2.1)
   gemnasium-parser
   gems (~> 0.8.3)
-  haml (~> 4.0.6)
+  haml (~> 5.1.2)
   jbuilder (~> 2.3.1)
   jquery-rails (~> 4.0.4)
   pg

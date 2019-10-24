@@ -7,7 +7,7 @@ gem 'sass-rails', '~> 5.0.3' # Use SCSS for stylesheets
 gem 'uglifier', '>= 2.7.1' # Use Uglifier as compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.1.0' # Use CoffeeScript for .coffee assets and views
 gem 'rest-client', '~> 1.8.0'
-gem 'haml', '~> 4.0.6'
+gem 'haml', '~> 5.1.2'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'codemirror-rails', '~> 5.5'
 gem 'foundation-rails', '~> 5.5.2.1'
