@@ -11,7 +11,7 @@ gem 'haml', '~> 4.0.6'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'codemirror-rails', '~> 5.5'
 gem 'foundation-rails', '~> 5.5.2.1'
-gem 'jquery-rails', '~> 4.0.4' # Use jquery as the JavaScript library
+gem 'jquery-rails', '~> 4.3.5' # Use jquery as the JavaScript library
 gem 'turbolinks', '~> 2.5.3' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 2.3.1' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'gems', '~> 0.8.3'
