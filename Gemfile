@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.7.1'
 gem 'sass-rails', '~> 5.0.3' # Use SCSS for stylesheets
 gem 'uglifier', '>= 2.7.1' # Use Uglifier as compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.1.0' # Use CoffeeScript for .coffee assets and views
