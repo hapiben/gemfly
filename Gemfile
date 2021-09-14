@@ -19,7 +19,7 @@ gem 'sdoc', '~> 0.4.1', group: :doc # bundle exec rake doc:rails generates the A
 gem 'gemnasium-parser'
 
 group :development do
-  gem 'better_errors', '~> 2.1.1'
+  gem 'better_errors', '~> 2.9.1'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rails', '~> 1.1.3'
